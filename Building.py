@@ -1,6 +1,6 @@
 import json
 from Elevator import Elevator
-
+import csv
 
 class Building:
 
@@ -10,8 +10,8 @@ class Building:
         self._elevators=elevators
 
     def __str__(self) ->str:
-        string =  "minFloor: "+ str(self._minFloor) +", maxFloor: "+ str(self._maxFloor)+ ", elvators: "+ str(self._elevators)
-        return string
+        return str(self.__dict__)
+
 
     def loadJson(self, file):
         try:
@@ -25,5 +25,4 @@ class Building:
                     self._elevators.append(elev)
         except IOError as e:
            print(e)
-
 

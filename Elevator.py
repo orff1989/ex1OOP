@@ -11,4 +11,4 @@ class Elevator:
         self._stopTime=stopTime
 
     def __str__(self) -> str:
-        return "id: "+ str(self._id)+ " speed: "+str(self._speed)+" minFloor: "
+        return str(self.__dict__)

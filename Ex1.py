@@ -1,13 +1,14 @@
 import sys
 import json
-
+from Call import Call, Calls
 from Building import Building
 
-#building =sys.argv[1]
-#calls = sys.argv[2]
-#out = sys.argv[3]
-#print("building= " + building +" calls= " + calls +" out= "+ out)
-b1= Building()
-print(b1)
-b1.loadJson("B2.json")
-print(b1._elevators[0])
+theBuilding=Building() # creating a building
+theBuilding.loadJson(sys.argv[1]) # getting the building attributes from the json file
+
+theCall=Calls() # creating a calls object
+theCall.loadCSV(sys.argv[2]) #  getting the calls attributes from the csv file
+
+theCall.exportCSv(sys.argv[3]) # exporting the calls to a new csv file
+
+
