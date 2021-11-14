@@ -10,7 +10,7 @@
 		_**The algorithm:**_
 		
 		a. The algorithm will check the next call,
-		and send to there an elevator that will get to the source floor as soon as possible.
+		and send to there an elevator that will get to the source floor in time with consideration the next calls.
 		
 		b.After sending the elevator, the algorithm will check the next calls and plan the path of the elevator.
 		
