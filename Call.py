@@ -33,3 +33,7 @@ class Calls:
         with open(file,'w', newline="") as f:
             writeOnCSV = csv.writer(f)
             writeOnCSV.writerows(ncalls)
+
+    @property
+    def calls(self):
+        return self._calls

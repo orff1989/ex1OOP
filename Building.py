@@ -26,3 +26,7 @@ class Building:
         except IOError as e:
            print(e)
 
+    @property
+    def elevators(self):
+        return self._elevators
+
