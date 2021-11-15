@@ -20,9 +20,10 @@ class Calls:
         with open(file) as f:
             reader = csv.reader(f)
             for row in reader:
-               c = Call(row[0],row[1],row[2],row[3],row[4],row[5])
+               c = Call(elevCall=row[0],time=float(row[1]),srcFloor=int(row[2]),destFloor=int(row[3]),status=int(row[4]),assignment=int(row[5]))
                allTheCalls.append(c)
             self._calls=allTheCalls
+
 
     def exportCSv(self, file):
         ncalls =[]

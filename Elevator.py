@@ -1,6 +1,7 @@
+
 class Elevator:
 
-    def __init__(self, id, speed=5, minFloor=5, maxFloor=11, closeTime=5, openTime=5, startTime=5, stopTime=5) ->None:
+    def __init__(self, id, speed=5, minFloor=5, maxFloor=11, closeTime=5, openTime=5, startTime=5, stopTime=5, flag=0) ->None:
         self._id=id
         self._speed=speed
         self._minFloor=minFloor
@@ -12,3 +13,9 @@ class Elevator:
 
     def __str__(self) -> str:
         return str(self.__dict__)
+
+    def timeForTravel(self, srcFloor, destFloor):
+        dist=abs(srcFloor-destFloor)
+        x = dist/self._speed
+        return self._closeTime +self._startTime +x+ self._stopTime + self._openTime
+

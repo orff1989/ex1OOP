@@ -11,4 +11,4 @@ theCall.loadCSV(sys.argv[2]) #  getting the calls attributes from the csv file
 
 theCall.exportCSv(sys.argv[3]) # exporting the calls to a new csv file
 
-
+theBuilding._elevators[1].timeForTravel(1,6)
