@@ -1,18 +1,27 @@
 import csv
 class Call:
 
-    def __init__(self,elevCall="Elevator call", time=0, srcFloor=0, destFloor=0, status=0, assignment=-1):
+    def __init__(self,elevCall="Elevator call", time=0, srcFloor=0, destFloor=0, status=0, assignment=-1, endTime=0):
         self._elevCall=elevCall
         self._time=time
         self._srcFloor=srcFloor
         self._destFloor=destFloor
         self._status=status
         self._assignment=assignment
+        self._endTime=endTime
+
 
 class Calls:
     def Calls(self, calls=[]):
       self._calls=calls
 
+
+    def lastTimeCalled(self, numOfLift):
+        ans=0
+        for i in range(len(self._calls)):
+            if self._calls[i]._assignment==numOfLift:
+                ans=i
+        return ans
 
 
     def loadCSV(self, file):
@@ -34,6 +43,3 @@ class Calls:
             writeOnCSV = csv.writer(f)
             writeOnCSV.writerows(ncalls)
 
-    @property
-    def calls(self):
-        return self._calls
