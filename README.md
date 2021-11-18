@@ -9,15 +9,14 @@
 2.	
 		_**The algorithm:**_
 		
-		a. The algorithm will check the next call,
-		and send to there an elevator that will get to the source floor in time with consideration the next calls.
+		a. the algorithm will allocate the first elevator to the first call.
 		
-		b.After sending the elevator, the algorithm will check the next calls and plan the path of the elevator.
+		b. we will calculate what time the elevator will reach to its destination.
 		
-		c.If the next call is on the way of the moving elevator and at the same direction,
-		the elevator will stop at this floor and continue to move.
-		else, the algorithm will calculte what elevator will get faster to the new floor and count the direction of the elevator.
-		
-		d. If the algorithm will recognize that will be load from some area it will send there elevators.
+		c. the algorithm will calculate the time it will reach to the source floor of every call with consideration
+		   of the cuuret position of the elevator, and the end time of the elevator's last call.
+		   
+		d. if the elevator will get in time for the next call, we will assign this elevator to the new call.
+		   and if it will not reach in time,  we will check every elevator and assign the elevator that will reach faster.
 		
 		
