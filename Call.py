@@ -12,7 +12,7 @@ class Call:
 
 
 class Calls:
-    def Calls(self, calls=[]):
+    def __init__(self, calls=[]):
       self._calls=calls
 
 
