@@ -5,6 +5,9 @@
     https://github.com/aspanu/ElevatorControl 
     
     In this project we will solve the problem of how to mange elvator control system with the knowing of all the future calls of every floor.
+    
+    ![diagram-5552862024406244954](https://user-images.githubusercontent.com/43110158/142610520-abcef666-65af-483c-ae68-61f9bbe23e3a.png)
+
 	
 2.	
 		_**The algorithm:**_
