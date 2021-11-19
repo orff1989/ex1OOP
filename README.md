@@ -1,4 +1,6 @@
-# ex1OOP
+# Ex1 - OOP
+ Or Finberg, 209163054
+
 1.
     https://github.com/bernadinm/elevator 
     https://github.com/akirillov/elevator-scheduler 
@@ -9,8 +11,8 @@
     ![diagram-5552862024406244954](https://user-images.githubusercontent.com/43110158/142610520-abcef666-65af-483c-ae68-61f9bbe23e3a.png)
 
 	
-2.	
-		_**The algorithm:**_
+	
+# 2. The algorithm: 
 		
 		a. the algorithm will allocate the first elevator to the first call.
 		
